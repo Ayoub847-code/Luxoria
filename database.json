@@ -1,0 +1,65 @@
+{
+    "packs": {
+        "pack1": {
+            "nom": "Pack de démarrage",
+            "prix": 500,
+            "description": "Pack contenant des produits exclusifs.",
+            "produits": ["1", "2"]
+        },
+        "pack2": {
+            "nom": "Pack VIP",
+            "prix": 1000,
+            "description": "Pack contenant des produits VIP et des avantages.",
+            "produits": ["2", "3"]
+        }
+    },
+    "commandes": {
+        "commande_1": {
+            "utilisateur_id": "1234567890",
+            "produits": {
+                "1": 2,
+                "2": 1
+            },
+            "status": "en attente",
+            "date_commande": "2025-06-05T12:00:00Z",
+            "prix_total": 350
+        },
+        "commande_2": {
+            "utilisateur_id": "0987654321",
+            "produits": {
+                "3": 1
+            },
+            "status": "livré",
+            "date_commande": "2025-06-04T15:00:00Z",
+            "prix_total": 200
+        }
+    },
+    "users": {
+        "1072165245906333756": {
+            "commande": ["commande_1", "commande_2"],
+            "abonnement": "VIP",
+            "packs_achetés": ["pack1"],
+            "role_vip": true
+        }
+    },
+    "produits": {
+        "1": {
+            "nom": "Produit A",
+            "prix": 100,
+            "description": "Description du produit A",
+            "stock": 10
+        },
+        "2": {
+            "nom": "Produit B",
+            "prix": 200,
+            "description": "Description du produit B",
+            "stock": 5
+        },
+        "3": {
+            "nom": "Produit C",
+            "prix": 150,
+            "description": "Description du produit C",
+            "stock": 8
+        }
+    }
+}
